@@ -20,7 +20,26 @@ To write a program to perform selection sort and insertion sort using python pro
 ## Program:
 i)	#Selection Sort
 ```
-
+''' 
+Program to sort the elements in the list using the Selection Sort algorithm.
+Developed by: your name
+RegisterNumber: 
+'''
+def selection_sort(nums):
+    # write your code here using selection sort
+    for i in range(len(nums)):
+        lowest_vaule_index = i
+        for j in range(i+1 , len(nums)):
+             if nums[j] < nums[ lowest_vaule_index]:
+                  lowest_vaule_index = j
+        nums[i],nums[ lowest_vaule_index] = nums[ lowest_vaule_index], nums[i]          
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
+    
+    
+    
+    
 
 
 
@@ -28,7 +47,23 @@ i)	#Selection Sort
 ```
 ii)	#Insertion Sort
 ```
-
+''' 
+Program to sort the elements in the list using the Insertion Sort algorithm.
+Developed by:SESANK.A
+RegisterNumber: 23009543
+'''
+def insertion_sort(nums):
+    # write your code here using selection sort
+    for i in range(1, len(nums)):
+        item_to_insert = nums[i]
+        j = i-1
+        while j >=0 and nums[j]> item_to_insert:
+            nums[j+1] = nums[j]
+            j -=1
+            nums[j+1] = item_to_insert
+list_of_nums = eval(input())
+insertion_sort(list_of_nums)
+print(list_of_nums)
 
 
 
@@ -37,6 +72,8 @@ ii)	#Insertion Sort
 ```
 
 ## Output:
+![image](https://github.com/ALLAMSESANK/Sorting-Algorithm/assets/147120920/dbbea986-eded-42be-90de-066d6b568e5e)
+![image](https://github.com/ALLAMSESANK/Sorting-Algorithm/assets/147120920/49925a1b-c723-407a-b4d6-cdc23c2d60d6)
 
 
 ## Result:
